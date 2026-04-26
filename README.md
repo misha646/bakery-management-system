@@ -1,4 +1,4 @@
-# Bakery Management System (BMS) – Complete Documentation
+# Bakery Management System (BMS)
 
 ## Overview
 
