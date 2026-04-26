@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Bakery Management System (BMS) – Complete Documentation
+=======
+# Bakery Management System (BMS)
+>>>>>>> 5380a7edfb46f09f98180ea5774a44459afdb019
 
 ## Overview
 
@@ -702,4 +706,8 @@ For issues, feature requests, or questions:
 
 ---
 
+<<<<<<< HEAD
 **© 2026 Bakery Management System. All rights reserved.**
+=======
+**© 2026 Bakery Management System. All rights reserved.**
+>>>>>>> 5380a7edfb46f09f98180ea5774a44459afdb019
