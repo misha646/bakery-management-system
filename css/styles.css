@@ -728,3 +728,57 @@ main#view-root {
   background: white;
   color: var(--primary-brown);
 }
+
+/* ===========================================================
+   EMERGENCY FIX: FORCE POS GRID RENDERING
+   =========================================================== */
+#posGrid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    gap: 15px !important;
+    width: 100% !important;
+    min-height: 400px !important;
+    align-content: start !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Force product cards to render */
+.pos-card {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    background: var(--white) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.pos-card img {
+    width: 100% !important;
+    height: 140px !important;
+    object-fit: cover !important;
+    display: block !important;
+    background: var(--bg-cream) !important;
+}
+
+.pos-card .product-info,
+.pos-card > div:not(:first-child) {
+    padding: 12px !important;
+}
+
+/* Force cart area to have proper height */
+#cartArea {
+    flex: 1 !important;
+    overflow-y: auto !important;
+    min-height: 200px !important;
+}
+
+/* Fix for the POS left panel */
+#posGrid + div, 
+.pos-menu-area {
+    overflow-y: auto !important;
+}
